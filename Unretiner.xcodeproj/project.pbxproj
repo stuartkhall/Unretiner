@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1713EF8813E524A60019EA65 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1713EF8713E524A60019EA65 /* background.jpg */; };
+		1713EFA113E526A10019EA65 /* UnretinaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1713EF9113E526A10019EA65 /* UnretinaViewController.m */; };
+		1713EFA213E526A10019EA65 /* UnretinerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1713EF9313E526A10019EA65 /* UnretinerAppDelegate.m */; };
+		1713EFA313E526A10019EA65 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1713EF9613E526A10019EA65 /* main.m */; };
+		1713EFA413E526A10019EA65 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 1713EF9913E526A10019EA65 /* Credits.rtf */; };
+		1713EFA513E526A10019EA65 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1713EF9B13E526A10019EA65 /* InfoPlist.strings */; };
+		1713EFA613E526A10019EA65 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1713EF9D13E526A10019EA65 /* MainMenu.xib */; };
+		1713EFA713E526A10019EA65 /* UnretinaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1713EF9F13E526A10019EA65 /* UnretinaViewController.xib */; };
+		1713EFAD13E579760019EA65 /* NSURL+Unretina.m in Sources */ = {isa = PBXBuildFile; fileRef = 1713EFAC13E579760019EA65 /* NSURL+Unretina.m */; };
+		1713EFAF13E57A310019EA65 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 1713EFAE13E57A310019EA65 /* Icon.icns */; };
+		1713EFB513E588740019EA65 /* NSDroppableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1713EFB413E588740019EA65 /* NSDroppableView.m */; };
+		1713EFB813E58E800019EA65 /* NSBitmapImageRep+Resizing.m in Sources */ = {isa = PBXBuildFile; fileRef = 1713EFB713E58E800019EA65 /* NSBitmapImageRep+Resizing.m */; };
+		17C3A37413E3FF1600294FBE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17C3A37313E3FF1600294FBE /* Cocoa.framework */; };
+		17C3A39213E3FF1700294FBE /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17C3A39113E3FF1700294FBE /* SenTestingKit.framework */; };
+		17C3A39313E3FF1700294FBE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17C3A37313E3FF1600294FBE /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		17C3A39413E3FF1700294FBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17C3A36613E3FF1600294FBE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17C3A36E13E3FF1600294FBE;
+			remoteInfo = Unretiner;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1713EF8713E524A60019EA65 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		1713EF9013E526A10019EA65 /* UnretinaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnretinaViewController.h; sourceTree = "<group>"; };
+		1713EF9113E526A10019EA65 /* UnretinaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnretinaViewController.m; sourceTree = "<group>"; };
+		1713EF9213E526A10019EA65 /* UnretinerAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnretinerAppDelegate.h; sourceTree = "<group>"; };
+		1713EF9313E526A10019EA65 /* UnretinerAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnretinerAppDelegate.m; sourceTree = "<group>"; };
+		1713EF9613E526A10019EA65 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1713EF9713E526A10019EA65 /* Unretiner-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Unretiner-Prefix.pch"; sourceTree = "<group>"; };
+		1713EF9A13E526A10019EA65 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		1713EF9C13E526A10019EA65 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1713EF9E13E526A10019EA65 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		1713EFA013E526A10019EA65 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/UnretinaViewController.xib; sourceTree = "<group>"; };
+		1713EFA913E526AF0019EA65 /* Unretiner-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Unretiner-Info.plist"; sourceTree = "<group>"; };
+		1713EFAB13E579760019EA65 /* NSURL+Unretina.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+Unretina.h"; sourceTree = "<group>"; };
+		1713EFAC13E579760019EA65 /* NSURL+Unretina.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Unretina.m"; sourceTree = "<group>"; };
+		1713EFAE13E57A310019EA65 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
+		1713EFB313E588740019EA65 /* NSDroppableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDroppableView.h; sourceTree = "<group>"; };
+		1713EFB413E588740019EA65 /* NSDroppableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDroppableView.m; sourceTree = "<group>"; };
+		1713EFB613E58E800019EA65 /* NSBitmapImageRep+Resizing.h */ = {isa = PBXFileReference; fileEncoding = 4; path = "NSBitmapImageRep+Resizing.h"; sourceTree = "<group>"; };
+		1713EFB713E58E800019EA65 /* NSBitmapImageRep+Resizing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBitmapImageRep+Resizing.m"; sourceTree = "<group>"; };
+		17C3A36F13E3FF1600294FBE /* Unretiner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Unretiner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		17C3A37313E3FF1600294FBE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		17C3A37613E3FF1600294FBE /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		17C3A37713E3FF1600294FBE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		17C3A37813E3FF1600294FBE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		17C3A39013E3FF1700294FBE /* UnretinerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnretinerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		17C3A39113E3FF1700294FBE /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		17C3A36C13E3FF1600294FBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17C3A37413E3FF1600294FBE /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17C3A38C13E3FF1700294FBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17C3A39213E3FF1700294FBE /* SenTestingKit.framework in Frameworks */,
+				17C3A39313E3FF1700294FBE /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1713EF8513E524A60019EA65 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1713EFA813E526AF0019EA65 /* Config */,
+				1713EF8613E524A60019EA65 /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1713EF8613E524A60019EA65 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				1713EFAE13E57A310019EA65 /* Icon.icns */,
+				1713EF8713E524A60019EA65 /* background.jpg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		1713EF8E13E526A10019EA65 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1713EF8F13E526A10019EA65 /* Controller */,
+				1713EF9413E526A10019EA65 /* Model */,
+				1713EF9513E526A10019EA65 /* Utilities */,
+				1713EF9813E526A10019EA65 /* View */,
+			);
+			name = Classes;
+			path = Unretiner/Classes;
+			sourceTree = "<group>";
+		};
+		1713EF8F13E526A10019EA65 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1713EF9213E526A10019EA65 /* UnretinerAppDelegate.h */,
+				1713EF9313E526A10019EA65 /* UnretinerAppDelegate.m */,
+				1713EF9013E526A10019EA65 /* UnretinaViewController.h */,
+				1713EF9113E526A10019EA65 /* UnretinaViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1713EF9413E526A10019EA65 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1713EF9513E526A10019EA65 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				1713EF9613E526A10019EA65 /* main.m */,
+				1713EF9713E526A10019EA65 /* Unretiner-Prefix.pch */,
+				1713EFAB13E579760019EA65 /* NSURL+Unretina.h */,
+				1713EFAC13E579760019EA65 /* NSURL+Unretina.m */,
+				1713EFB613E58E800019EA65 /* NSBitmapImageRep+Resizing.h */,
+				1713EFB713E58E800019EA65 /* NSBitmapImageRep+Resizing.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		1713EF9813E526A10019EA65 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1713EFB313E588740019EA65 /* NSDroppableView.h */,
+				1713EFB413E588740019EA65 /* NSDroppableView.m */,
+				1713EF9913E526A10019EA65 /* Credits.rtf */,
+				1713EF9B13E526A10019EA65 /* InfoPlist.strings */,
+				1713EF9D13E526A10019EA65 /* MainMenu.xib */,
+				1713EF9F13E526A10019EA65 /* UnretinaViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1713EFA813E526AF0019EA65 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				1713EFA913E526AF0019EA65 /* Unretiner-Info.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		17C3A36413E3FF1600294FBE = {
+			isa = PBXGroup;
+			children = (
+				1713EF8E13E526A10019EA65 /* Classes */,
+				17C3A37913E3FF1600294FBE /* Unretiner */,
+				17C3A37213E3FF1600294FBE /* Frameworks */,
+				17C3A37013E3FF1600294FBE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		17C3A37013E3FF1600294FBE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17C3A36F13E3FF1600294FBE /* Unretiner.app */,
+				17C3A39013E3FF1700294FBE /* UnretinerTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		17C3A37213E3FF1600294FBE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17C3A37313E3FF1600294FBE /* Cocoa.framework */,
+				17C3A39113E3FF1700294FBE /* SenTestingKit.framework */,
+				17C3A37513E3FF1600294FBE /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		17C3A37513E3FF1600294FBE /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17C3A37613E3FF1600294FBE /* AppKit.framework */,
+				17C3A37713E3FF1600294FBE /* CoreData.framework */,
+				17C3A37813E3FF1600294FBE /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		17C3A37913E3FF1600294FBE /* Unretiner */ = {
+			isa = PBXGroup;
+			children = (
+				1713EF8513E524A60019EA65 /* Resources */,
+			);
+			path = Unretiner;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		17C3A36E13E3FF1600294FBE /* Unretiner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17C3A3A213E3FF1700294FBE /* Build configuration list for PBXNativeTarget "Unretiner" */;
+			buildPhases = (
+				17C3A36B13E3FF1600294FBE /* Sources */,
+				17C3A36C13E3FF1600294FBE /* Frameworks */,
+				17C3A36D13E3FF1600294FBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Unretiner;
+			productName = Unretiner;
+			productReference = 17C3A36F13E3FF1600294FBE /* Unretiner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		17C3A38F13E3FF1700294FBE /* UnretinerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17C3A3A513E3FF1700294FBE /* Build configuration list for PBXNativeTarget "UnretinerTests" */;
+			buildPhases = (
+				17C3A38B13E3FF1700294FBE /* Sources */,
+				17C3A38C13E3FF1700294FBE /* Frameworks */,
+				17C3A38D13E3FF1700294FBE /* Resources */,
+				17C3A38E13E3FF1700294FBE /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17C3A39513E3FF1700294FBE /* PBXTargetDependency */,
+			);
+			name = UnretinerTests;
+			productName = UnretinerTests;
+			productReference = 17C3A39013E3FF1700294FBE /* UnretinerTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		17C3A36613E3FF1600294FBE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = Bonobo;
+			};
+			buildConfigurationList = 17C3A36913E3FF1600294FBE /* Build configuration list for PBXProject "Unretiner" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 17C3A36413E3FF1600294FBE;
+			productRefGroup = 17C3A37013E3FF1600294FBE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				17C3A36E13E3FF1600294FBE /* Unretiner */,
+				17C3A38F13E3FF1700294FBE /* UnretinerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		17C3A36D13E3FF1600294FBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1713EF8813E524A60019EA65 /* background.jpg in Resources */,
+				1713EFA413E526A10019EA65 /* Credits.rtf in Resources */,
+				1713EFA513E526A10019EA65 /* InfoPlist.strings in Resources */,
+				1713EFA613E526A10019EA65 /* MainMenu.xib in Resources */,
+				1713EFA713E526A10019EA65 /* UnretinaViewController.xib in Resources */,
+				1713EFAF13E57A310019EA65 /* Icon.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17C3A38D13E3FF1700294FBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17C3A38E13E3FF1700294FBE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		17C3A36B13E3FF1600294FBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1713EFA113E526A10019EA65 /* UnretinaViewController.m in Sources */,
+				1713EFA213E526A10019EA65 /* UnretinerAppDelegate.m in Sources */,
+				1713EFA313E526A10019EA65 /* main.m in Sources */,
+				1713EFAD13E579760019EA65 /* NSURL+Unretina.m in Sources */,
+				1713EFB513E588740019EA65 /* NSDroppableView.m in Sources */,
+				1713EFB813E58E800019EA65 /* NSBitmapImageRep+Resizing.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17C3A38B13E3FF1700294FBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		17C3A39513E3FF1700294FBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17C3A36E13E3FF1600294FBE /* Unretiner */;
+			targetProxy = 17C3A39413E3FF1700294FBE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1713EF9913E526A10019EA65 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1713EF9A13E526A10019EA65 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		1713EF9B13E526A10019EA65 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1713EF9C13E526A10019EA65 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1713EF9D13E526A10019EA65 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1713EF9E13E526A10019EA65 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		1713EF9F13E526A10019EA65 /* UnretinaViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1713EFA013E526A10019EA65 /* en */,
+			);
+			name = UnretinaViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		17C3A3A013E3FF1700294FBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		17C3A3A113E3FF1700294FBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		17C3A3A313E3FF1700294FBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Unretiner/Classes/Utilities/Unretiner-Prefix.pch";
+				INFOPLIST_FILE = "Unretiner/Resources/Config/Unretiner-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		17C3A3A413E3FF1700294FBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Unretiner/Classes/Utilities/Unretiner-Prefix.pch";
+				INFOPLIST_FILE = "Unretiner/Resources/Config/Unretiner-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		17C3A3A613E3FF1700294FBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Unretiner.app/Contents/MacOS/Unretiner";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Unretiner/Unretiner-Prefix.pch";
+				INFOPLIST_FILE = "UnretinerTests/UnretinerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		17C3A3A713E3FF1700294FBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Unretiner.app/Contents/MacOS/Unretiner";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Unretiner/Unretiner-Prefix.pch";
+				INFOPLIST_FILE = "UnretinerTests/UnretinerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		17C3A36913E3FF1600294FBE /* Build configuration list for PBXProject "Unretiner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17C3A3A013E3FF1700294FBE /* Debug */,
+				17C3A3A113E3FF1700294FBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17C3A3A213E3FF1700294FBE /* Build configuration list for PBXNativeTarget "Unretiner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17C3A3A313E3FF1700294FBE /* Debug */,
+				17C3A3A413E3FF1700294FBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17C3A3A513E3FF1700294FBE /* Build configuration list for PBXNativeTarget "UnretinerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17C3A3A613E3FF1700294FBE /* Debug */,
+				17C3A3A713E3FF1700294FBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 17C3A36613E3FF1600294FBE /* Project object */;
+}
