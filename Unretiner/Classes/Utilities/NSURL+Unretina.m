@@ -13,8 +13,22 @@
 static NSString* const kRetinaString = @"@2x";
 static NSString* const kHdString = @"-hd";
 
-- (BOOL)unretina:(NSURL*)folder errors:(NSMutableArray*)errors warnings:(NSMutableArray*)warnings {
+- (BOOL)unretina:(NSURL*)folder errors:(NSMutableArray*)errors warnings:(NSMutableArray*)warnings overwrite:(BOOL)overwrite {
+    BOOL success = NO;
     if ([self isRetinaImage]) {
+        // New path is the same file minus the @2x
+        NSString* newFilename = [[self lastPathComponent] stringByReplacingOccurrencesOfString:@"@2x" withString:@""];
+        newFilename = [newFilename stringByReplacingOccurrencesOfString:@"-hd" withString:@""];
+        NSString* newPath = [NSString stringWithFormat:@"%@%@", [folder relativeString], newFilename];
+        NSURL* newUrl = [NSURL URLWithString:newPath];
+        
+        // Check if file exists
+		if (!overwrite && [newUrl checkResourceIsReachableAndReturnError:nil]) {
+			// Exists already
+			[warnings addObject:[NSString stringWithFormat:@"%@ : Skipped (exists)", [[newUrl absoluteString] lastPathComponent]]];
+			return NO;
+		}
+        
 		NSImage *sourceImage = [[NSImage alloc] initWithContentsOfURL:self];
         if (sourceImage && [sourceImage isValid]) {
             // Hack to ensure the size is set correctly independent of the dpi
@@ -33,17 +47,15 @@ static NSString* const kHdString = @"-hd";
                 // Create a bitmap representation
                 NSBitmapImageRep *imageRep = [NSBitmapImageRep imageRepWithWidth:[sourceImage size].width / 2.0 andHeight:[sourceImage size].height / 2.0];
                 [imageRep setImage:sourceImage];
-                
-                // New path is the same file minus the @2x
-                NSString* newFilename = [[self lastPathComponent] stringByReplacingOccurrencesOfString:@"@2x" withString:@""];
-                newFilename = [newFilename stringByReplacingOccurrencesOfString:@"-hd" withString:@""];
-                NSString* newPath = [NSString stringWithFormat:@"%@%@", [folder relativeString], newFilename];
 
                 // Write out the new image
                 NSData *imageData = [imageRep representationUsingType:imageType properties:nil];
-                if (![imageData writeToURL:[NSURL URLWithString:newPath] atomically:YES]) {
+                if (![imageData writeToURL:newUrl atomically:YES]) {
                     [errors addObject:[NSString stringWithFormat:@"%@ : Error creating file", newPath]];
                 } 
+                else {
+                    success = YES;
+                }
             }
             else {
                 [errors addObject:[NSString stringWithFormat:@"%@ : Unknown image type", [[self absoluteString] lastPathComponent]]];
@@ -64,7 +76,7 @@ static NSString* const kHdString = @"-hd";
         [errors addObject:[NSString stringWithFormat:@"%@ : Not a @2x or -hd file", [[self absoluteString] lastPathComponent]]];
     }
     
-    return NO;
+    return success;
 }
 
 - (NSBitmapImageFileType)imageType {

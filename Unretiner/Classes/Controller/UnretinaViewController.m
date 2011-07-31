@@ -73,7 +73,7 @@ static NSString* const kHdString = @"-hd";
             }
             else if (!directory) {
                 // Parse the file
-                [url unretina:savePath errors:errors warnings:warnings];
+                [url unretina:savePath errors:errors warnings:warnings overwrite:[checkBox state]];
             }
         }
     }
